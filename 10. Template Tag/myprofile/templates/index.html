@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judul}} | My Profile</title>
+</head>
+<body>
+   <p><h1>Halaman {{nama}} di Templates {{judul}}</h1></p>  
+   <p><h2>nama: {{nama}}</h2></p> 
+    <ul>
+      {% comment %} tag {% endcomment %}
+      {% for link, name in nav %}
+         <li>
+            <a href="{{link}}">{{name}}</a>
+         </li>
+      {% endfor %}
+   </ul>
+</body>
+</html>

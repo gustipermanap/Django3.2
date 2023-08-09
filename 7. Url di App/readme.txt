@@ -20,6 +20,19 @@ code .
 
 
 ###################################################
+
+===================================================
+Membuat App
+---------------------------------------------------
+masuk ke Project
+lalu buka terminal
+python manage.py startapp profil
+
+===================================================
+modif view.py di App
+---------------------------------------------------
+nano profil/views.py
+
 ===================================================
 Buat folder templates
 ---------------------------------------------------
@@ -38,6 +51,23 @@ Buat file view.py dan Modif URL
 ---------------------------------------------------
 buka MyProfile(project)/MyProfile(django_project)
 buat file view.py
+
+===================================================
+Membuat App
+---------------------------------------------------
+masuk ke Project
+lalu buka terminal
+python manage.py startapp Profil
+
+Membuat App
+---------------------------------------------------
+masuk ke Project
+lalu buka terminal
+python manage.py startapp about
+
+
+edit views di app about
+buat html about
 
 
 ###################################################
