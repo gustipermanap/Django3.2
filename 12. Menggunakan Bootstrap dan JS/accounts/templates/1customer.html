@@ -1,0 +1,62 @@
+{% extends 'main.html' %}
+{% block content%}
+<hr>
+	<div class="row">
+		<div class="col-ml">
+			<div class="card card-body">
+				 <h5>Customer:</h5>
+			</hr>
+			<a class="btn btn-outline-info btn-sn btn-block" href="">Update Customer</a> 
+            <a class="btn btn-outline-danger btn-sn btn-block" href="">Delete Customer</a> 
+            </div>
+		</div>
+
+		<div class="col-ml">
+			<div class="card card-body">
+				 <h5>Contact Information</h5>
+			</hr>
+			<p>Email:</p> 
+            <p>Phone:</p> 
+            </div>
+		</div>
+
+        <div class="col-ml">
+			<div class="card card-body">
+				 <h5>Total Orders</h5>
+			</hr>
+			<h1 style="text-align: center; pending: 10px"></h1>
+			</div>
+		</div>
+    </div>
+
+<hr>
+	<div class="row">
+		<div class="col-ml">
+			<div class="card card-body">
+				<form method="get">
+					<bottom class="btn btn-primary" type="submit">Search</bottom>
+				</form>
+	        </div>
+		</div>
+    </div>
+
+<hr>
+
+	<div class="row">
+		<div class="col-ml">
+			<div class="card card-body">
+				<table class="table table-sm">
+                	<tr>
+                		<th>Products</th>
+                		<th>Category</th>
+                		<th>Date Orderd</th>
+                		<th>Status</th>
+                		<th>Update</th>
+                		<th>Remove</th>
+                	</tr>
+                </table>
+	        </div>
+		</div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judul}} | My Profile</title>
+</head>
+<body>
+   <p><h1>Halaman {{nama}} di Templates {{judul}}</h1></p>  
+   <p><h2>nama: {{nama}}</h2></p> 
+    <ul>
+      {% comment %} tag {% endcomment %}
+      {% for link, name in nav %}
+         <li>
+            <a href="{{link}}">{{name}}</a>
+         </li>
+      {% endfor %}
+   </ul>
+   {% load static %}
+   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" >
+   <img style='width: 20%' src="{% static 'example.png' %}" alt="My Image">
+</body>
+</html>

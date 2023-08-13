@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{judul}} | About</title>
+</head>
+<body>
+   <p><h1>Halaman Index di Templates {{judul}}</h1></p>  
+   <p><h2>nama: {{nama}}</h2></p> 
+    <ul>
+      
+      {% for link, name in nav %}
+         <li><a href="   {{link}} " title="">{{name}}</a></li>
+         <li><a href="/index" title="">Home</a></li>
+         <li><a href="/about/" title="">About</a></li>
+      {% endfor %}
+   </ul>
+</body>
+</html>

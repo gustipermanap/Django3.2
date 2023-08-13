@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman utama</title>
+</head>
+<body>
+    {% block content %}
+    {% include 'navbar.html' %}
+    {% include 'products.html' %}
+    {% include 'customer.html' %}
+    {% endblock content %}
+    <hr>
+    <h5>main footer</h5>
+</body>
+</html>
